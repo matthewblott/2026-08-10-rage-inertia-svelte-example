@@ -4,6 +4,10 @@ class FooController < ApplicationController
     foo = Foo.new
     foo.message = "Hello World!"
 
-    render inertia: "Foo/Index", props: { foo: foo }
+    render inertia: "foo/index", props: { foo: foo }
   end
+  
+  def bar
+  end
+
 end
